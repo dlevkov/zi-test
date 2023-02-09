@@ -15,7 +15,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "ziTest",
+            "prefix": "zi",
             "style": "camelCase"
           }
         ],
@@ -23,7 +23,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "zi-test",
+            "prefix": "zi",
             "style": "kebab-case"
           }
         ]

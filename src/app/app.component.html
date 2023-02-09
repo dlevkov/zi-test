@@ -1,1 +1,12 @@
-<zi-test-nx-welcome></zi-test-nx-welcome>
+<!-- <button ziOverflowTooltip>hover</button> -->
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <table>
+        <tr>
+            <td class="short-example" ziOverflowTooltip>short text</td>
+        </tr>
+        <tr *ngFor="let item of arr; trackBy:trackByFn">
+            <td class="long-example" ziOverflowTooltip> {{item.text}}</td>
+        </tr>
+    </table>
+</div>

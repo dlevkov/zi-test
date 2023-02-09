@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { TooltipDirective } from './tooltip/tooltip.directive';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent, TooltipDirective, TooltipComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

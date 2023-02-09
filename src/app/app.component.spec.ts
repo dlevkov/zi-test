@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent, NxWelcomeComponent],
+      declarations: [AppComponent, TooltipComponent],
     }).compileComponents();
   });
 
@@ -21,12 +21,20 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('zi-test');
   });
 
-  it('should render title', () => {
+  it('should render long text', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome zi-test'
+    expect(compiled.querySelector('.long-example')?.textContent).toContain(
+      "This is an example of very very long test, that doesn't fits his container"
+    );
+  });
+  it('should render short text', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.short-example')?.textContent).toContain(
+      'short text'
     );
   });
 });
