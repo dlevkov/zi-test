@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'zi-tooltip',
@@ -7,8 +7,6 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TooltipComponent {
-  @Input() placement: 'top' | 'right' | 'bottom' | 'left' = 'top';
-
   content: string | null = '';
   isActive = true;
   left = 0;

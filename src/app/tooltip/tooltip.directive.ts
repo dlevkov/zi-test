@@ -18,7 +18,6 @@ import { TooltipService } from './tooltip.service';
 export class TooltipDirective implements OnDestroy {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private componentRef: ComponentRef<any> | null = null;
-  private hasView = false;
 
   constructor(
     private elementRef: ElementRef,
