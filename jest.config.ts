@@ -10,6 +10,8 @@ export default {
     },
   },
   coverageDirectory: './coverage/zi-test',
+  collectCoverageFrom: ['src/app/**/*.ts', '!**/node_modules/**', '!**/dist/**', ],
+  coverageReporters: ['html', 'text', 'text-summary', 'cobertura'],
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
@@ -19,7 +21,5 @@ export default {
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
-  testMatch: [
-    '<rootDir>/src/**/*.spec.ts',
-  ],
+  testMatch: ['<rootDir>/src/**/*.spec.ts'],
 };

@@ -16,6 +16,7 @@ import { TooltipService } from './tooltip.service';
   selector: '[ziOverflowTooltip]',
 })
 export class TooltipDirective implements OnDestroy {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private componentRef: ComponentRef<any> | null = null;
   private hasView = false;
 

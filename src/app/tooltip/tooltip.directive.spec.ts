@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { TooltipDirective } from './tooltip.directive';
 
 describe('TooltipDirective', () => {
